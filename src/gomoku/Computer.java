@@ -1,4 +1,5 @@
 package gomoku;
+
 public class Computer {
 	public Computer(){
 	}
