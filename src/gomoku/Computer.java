@@ -3,9 +3,14 @@ package gomoku;
 public class Computer {
 	public Computer(){
 	}
+	
+	public void init(){
+		// TODO Load the latest AI
+	}
+	
 	public int[] PlayChess(int[][] chessboard){
 		int x = 0, y = 0, value = 0, maxvalue = 0;
-		//ToDo: will put chess by AI
+		// TODO The action will be done by the trained AI
 		for (int i = 0; i < Config.ChessBoardWidth; i++){
 			for (int j = 0; j < Config.ChessBoardHeight; j++){
 				if (chessboard[i][j] == Config.NoChess){

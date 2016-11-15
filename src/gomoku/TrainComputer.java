@@ -17,6 +17,11 @@ import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Train Computer by several actual cases
+ * @author LongYang
+ *
+ */
 public class TrainComputer {
 	public TrainComputer(){	
 	}

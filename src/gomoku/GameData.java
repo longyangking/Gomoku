@@ -5,22 +5,37 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * Record every play into file
+ * @author LongYang
+ *
+ */
 public class GameData {
 	private List<int[][]> list;
+	private int result;
 	public GameData(){
 		list = new ArrayList<int[][]>();
+	}
+	public GameData(List<int[][]> list){
+		this.list = list;
 	}
 	public void append(ChessBoard chessboard){
 		list.add(chessboard.ChessBoardInfo());
 	}
+	public void GameEnd(int status){
+		this.result = status;
+	}
 	public List<int[][]> getdata(){
-		return list;
+		return this.list;
+	}
+	public int getresult(){
+		return this.result;
 	}
 	
 	/**
 	 * Get Game Data from file
-	 * @param filename
-	 * @return GameData
+	 * @param filename File name
+	 * @return GameData Game Data
 	 * @throws IOException
 	 */
 	public GameData load(String filename) throws IOException{
@@ -39,6 +54,7 @@ public class GameData {
 		BufferedWriter bw = null;
 		fw = new FileWriter("./data/"+filename,true);
 		bw = new BufferedWriter(fw,100);
+		// TODO Write Data
 		bw.flush();
 		bw.close();
 		fw.close();
