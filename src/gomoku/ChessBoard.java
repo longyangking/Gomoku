@@ -5,6 +5,10 @@ public class ChessBoard {
 		chessboard = new int[Config.ChessBoardWidth][Config.ChessBoardWidth];
 	}
 	
+	public ChessBoard(int[][] chessboard){
+		this.chessboard = chessboard;
+	}
+	
 	public void initChessBoard(){
 		chessboard = new int[Config.ChessBoardWidth][Config.ChessBoardWidth];
 	}
