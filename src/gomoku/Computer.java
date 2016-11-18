@@ -1,4 +1,5 @@
 package gomoku;
+import ai.Intelligence;
 
 public class Computer {
 	public Computer(){
@@ -6,6 +7,7 @@ public class Computer {
 	
 	public void init(){
 		// TODO Load the latest AI
+		Intelligence ai = new Intelligence();
 	}
 	
 	public int[] PlayChess(int[][] chessboard){

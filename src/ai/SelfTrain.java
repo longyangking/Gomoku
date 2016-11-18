@@ -1,4 +1,7 @@
-package gomoku;
+package ai;
+
+import gomoku.Computer;
+import gomoku.Config;
 
 /**
  * The Class of Self-playing

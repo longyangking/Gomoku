@@ -1,4 +1,4 @@
-package gomoku;
+package ai;
 
 import org.deeplearning4j.eval.Evaluation;
 
@@ -16,6 +16,8 @@ import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import gomoku.Computer;
 
 /**
  * Train Computer by several actual cases
