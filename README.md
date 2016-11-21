@@ -1,4 +1,5 @@
 #Gomoku Game
+![](image/ui.png)
 
 ##Features
 Play with Artificial Intelligence (Deep Learning)
